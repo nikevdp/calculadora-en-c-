@@ -1,0 +1,3 @@
+/home/nicolas/Escritorio/calculadora/build/CMakeFiles/calc.dir
+/home/nicolas/Escritorio/calculadora/build/CMakeFiles/edit_cache.dir
+/home/nicolas/Escritorio/calculadora/build/CMakeFiles/rebuild_cache.dir
