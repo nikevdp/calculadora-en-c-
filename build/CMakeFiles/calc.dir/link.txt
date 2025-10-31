@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/calc.dir/src/main.cpp.o CMakeFiles/calc.dir/src/math_utils.cpp.o -o calc 
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/calc.dir/src/main.cpp.o CMakeFiles/calc.dir/src/math_utils.cpp.o -o calc 

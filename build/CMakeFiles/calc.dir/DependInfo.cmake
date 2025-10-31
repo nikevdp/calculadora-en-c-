@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nicolas/Escritorio/calculadora/src/main.cpp" "CMakeFiles/calc.dir/src/main.cpp.o" "gcc" "CMakeFiles/calc.dir/src/main.cpp.o.d"
-  "/home/nicolas/Escritorio/calculadora/src/math_utils.cpp" "CMakeFiles/calc.dir/src/math_utils.cpp.o" "gcc" "CMakeFiles/calc.dir/src/math_utils.cpp.o.d"
+  "/home/nicolas/Escritorio/Workspace/calculadora-en-c-/src/main.cpp" "CMakeFiles/calc.dir/src/main.cpp.o" "gcc" "CMakeFiles/calc.dir/src/main.cpp.o.d"
+  "/home/nicolas/Escritorio/Workspace/calculadora-en-c-/src/math_utils.cpp" "CMakeFiles/calc.dir/src/math_utils.cpp.o" "gcc" "CMakeFiles/calc.dir/src/math_utils.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
