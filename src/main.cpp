@@ -15,6 +15,20 @@
 #  define CLEAR_CMD "clear"
 #endif
 
+std::string x = "debug";
+
+void buildType(){
+    #ifdef DEBUG
+        std::cout << "Modo Debug" << std::endl;
+    #endif
+    #ifdef RELEASE
+        std::cout << "Modo Release" << std::endl;
+    #else
+        std::cout << "Modo Develop" << std::endl;
+    #endif
+}
+
+
 void mostrarAyuda() {
     std::cout << "\nComandos disponibles:\n";
     std::cout << "  s, sumar          → suma dos números\n";
@@ -22,7 +36,8 @@ void mostrarAyuda() {
     std::cout << "  m, multiplicar    → multiplica dos números\n";
     std::cout << "  d, dividir        → divide dos números\n";
     std::cout << "  e, exponencial    → eleva el primer numero con el segundo\n";
-    std::cout << "  h o historial     → muestra el historial de operaciones\n\n";
+    std::cout << "  c o clear         → limpia la terminal\n";
+    std::cout << "  h o historial     → muestra el historial de operaciones\n";
     std::cout << "  salir             → termina el programa\n";
     std::cout << "  help o ?          → muestra esta ayuda\n\n";
 }
@@ -31,6 +46,10 @@ void agregarAlHistorial(std::vector<std::string>& history, std::ostringstream& o
     history.push_back(oss.str()); // sumo la operacion acual al history, transformando el oss en string
     oss.str(""); // borro el contenido de oss "buffer"   
     oss.clear(); // limpio flags (errores o fails) que se podria haber acumulado
+}
+
+inline void cambiarComasPorPuntos (std::string& s){
+    return std::replace(s.begin(), s.end(), ',', '.');
 }
 
 void verHistorial(std::vector<std::string>& history, int n){
@@ -60,6 +79,8 @@ void verHistorial(std::vector<std::string>& history, int n){
 }
 
 void menuInicio(){
+    std::cout << "Bienvenido al ";
+    buildType();
     std::string nombre;
     std::cout << "Ingresá tu nombre completo: ";
     std::getline(std::cin, nombre);
@@ -89,7 +110,11 @@ void menuInicio(){
 }
 
 inline void clear_screen() {
-  std::system(CLEAR_CMD);
+  int ret = std::system(CLEAR_CMD);
+  if(ret != 0){
+    std::cerr << "[WARN] Error al ejecutar comando: " << CLEAR_CMD << '\n';
+  }
+  
 }
 
 int main() {
@@ -111,10 +136,13 @@ int main() {
         //mira si se cargo algo en line, si esta vacio se reinicia el while
         if (line.empty()) continue;
 
+        cambiarComasPorPuntos(line);
+        std::cout << line << std::endl;
         // se crea un stream de la lectura desde line, con el fin de poder hacer un parser luego y leer los datos separados
         // de esta manera nos aseguramos que no quede basura en la linea, dado que todo lo que se pase del rago de variables buscadas de deseche
         // ej si el usuario ingresa s 3 4 5 6, todo lo que venga despues del 4 se desecha y no interfiere en operaciones futuras.
         std::istringstream iss(line);
+
 
         std::string op;
         double a, b;

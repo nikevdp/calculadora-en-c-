@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nicolas/Escritorio/calculadora
+CMAKE_SOURCE_DIR = /home/nicolas/Escritorio/Workspace/calculadora-en-c-
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nicolas/Escritorio/calculadora/build
+CMAKE_BINARY_DIR = /home/nicolas/Escritorio/Workspace/calculadora-en-c-/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/calc.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/calc.dir/progress.make
 include CMakeFiles/calc.dir/flags.make
 
 CMakeFiles/calc.dir/src/main.cpp.o: CMakeFiles/calc.dir/flags.make
-CMakeFiles/calc.dir/src/main.cpp.o: /home/nicolas/Escritorio/calculadora/src/main.cpp
+CMakeFiles/calc.dir/src/main.cpp.o: /home/nicolas/Escritorio/Workspace/calculadora-en-c-/src/main.cpp
 CMakeFiles/calc.dir/src/main.cpp.o: CMakeFiles/calc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nicolas/Escritorio/calculadora/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/calc.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calc.dir/src/main.cpp.o -MF CMakeFiles/calc.dir/src/main.cpp.o.d -o CMakeFiles/calc.dir/src/main.cpp.o -c /home/nicolas/Escritorio/calculadora/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nicolas/Escritorio/Workspace/calculadora-en-c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/calc.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calc.dir/src/main.cpp.o -MF CMakeFiles/calc.dir/src/main.cpp.o.d -o CMakeFiles/calc.dir/src/main.cpp.o -c /home/nicolas/Escritorio/Workspace/calculadora-en-c-/src/main.cpp
 
 CMakeFiles/calc.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calc.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nicolas/Escritorio/calculadora/src/main.cpp > CMakeFiles/calc.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nicolas/Escritorio/Workspace/calculadora-en-c-/src/main.cpp > CMakeFiles/calc.dir/src/main.cpp.i
 
 CMakeFiles/calc.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calc.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nicolas/Escritorio/calculadora/src/main.cpp -o CMakeFiles/calc.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nicolas/Escritorio/Workspace/calculadora-en-c-/src/main.cpp -o CMakeFiles/calc.dir/src/main.cpp.s
 
 CMakeFiles/calc.dir/src/math_utils.cpp.o: CMakeFiles/calc.dir/flags.make
-CMakeFiles/calc.dir/src/math_utils.cpp.o: /home/nicolas/Escritorio/calculadora/src/math_utils.cpp
+CMakeFiles/calc.dir/src/math_utils.cpp.o: /home/nicolas/Escritorio/Workspace/calculadora-en-c-/src/math_utils.cpp
 CMakeFiles/calc.dir/src/math_utils.cpp.o: CMakeFiles/calc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nicolas/Escritorio/calculadora/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/calc.dir/src/math_utils.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calc.dir/src/math_utils.cpp.o -MF CMakeFiles/calc.dir/src/math_utils.cpp.o.d -o CMakeFiles/calc.dir/src/math_utils.cpp.o -c /home/nicolas/Escritorio/calculadora/src/math_utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nicolas/Escritorio/Workspace/calculadora-en-c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/calc.dir/src/math_utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calc.dir/src/math_utils.cpp.o -MF CMakeFiles/calc.dir/src/math_utils.cpp.o.d -o CMakeFiles/calc.dir/src/math_utils.cpp.o -c /home/nicolas/Escritorio/Workspace/calculadora-en-c-/src/math_utils.cpp
 
 CMakeFiles/calc.dir/src/math_utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calc.dir/src/math_utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nicolas/Escritorio/calculadora/src/math_utils.cpp > CMakeFiles/calc.dir/src/math_utils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nicolas/Escritorio/Workspace/calculadora-en-c-/src/math_utils.cpp > CMakeFiles/calc.dir/src/math_utils.cpp.i
 
 CMakeFiles/calc.dir/src/math_utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calc.dir/src/math_utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nicolas/Escritorio/calculadora/src/math_utils.cpp -o CMakeFiles/calc.dir/src/math_utils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nicolas/Escritorio/Workspace/calculadora-en-c-/src/math_utils.cpp -o CMakeFiles/calc.dir/src/math_utils.cpp.s
 
 # Object files for target calc
 calc_OBJECTS = \
@@ -109,7 +109,7 @@ calc: CMakeFiles/calc.dir/src/main.cpp.o
 calc: CMakeFiles/calc.dir/src/math_utils.cpp.o
 calc: CMakeFiles/calc.dir/build.make
 calc: CMakeFiles/calc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nicolas/Escritorio/calculadora/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable calc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nicolas/Escritorio/Workspace/calculadora-en-c-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable calc"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/calc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/calc.dir/clean:
 .PHONY : CMakeFiles/calc.dir/clean
 
 CMakeFiles/calc.dir/depend:
-	cd /home/nicolas/Escritorio/calculadora/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nicolas/Escritorio/calculadora /home/nicolas/Escritorio/calculadora /home/nicolas/Escritorio/calculadora/build /home/nicolas/Escritorio/calculadora/build /home/nicolas/Escritorio/calculadora/build/CMakeFiles/calc.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/nicolas/Escritorio/Workspace/calculadora-en-c-/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nicolas/Escritorio/Workspace/calculadora-en-c- /home/nicolas/Escritorio/Workspace/calculadora-en-c- /home/nicolas/Escritorio/Workspace/calculadora-en-c-/build /home/nicolas/Escritorio/Workspace/calculadora-en-c-/build /home/nicolas/Escritorio/Workspace/calculadora-en-c-/build/CMakeFiles/calc.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/calc.dir/depend
 
